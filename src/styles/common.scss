@@ -1,0 +1,27 @@
+.app-wrapper {
+  .sidebar-wrapper {
+    position: absolute;
+    background: $sidebar-bgcolor;
+    width: $sidebar-width;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    @media screen and (max-width: $break-small) {
+      left: -$sidebar-width;
+    }
+  }
+  .sidebar-toggle-button {
+    position: fixed;
+    display: none;
+    height: 40px;
+    width: 40px;
+    background: $sidebar-bgcolor;
+
+    @media screen and (max-width: $break-small) {
+      display: block;
+    }
+  }
+}
+

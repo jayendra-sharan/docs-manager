@@ -1,0 +1,27 @@
+.app-wrapper {
+  .show-sidebar {
+    left: 0;
+  }
+  .move-sidebar-toggle-button {
+    left: $sidebar-width;
+  }
+  .sidebar-toggle-button {
+    .button-arrow {
+      font-weight: bold;
+      font-size: 34px;
+      text-align: center;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .show-arrow {
+      &:before {
+        content: '\003E'
+      }
+    }
+    .hide-arrow {
+      &:before {
+        content: '\003C'
+      }
+    }
+  }
+}
