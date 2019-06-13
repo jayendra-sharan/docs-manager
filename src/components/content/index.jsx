@@ -1,13 +1,9 @@
 import React from 'react';
 
-const filePath = "/docs/pan_card.pdf" 
-const textFilePath = "/docs/test.txt";
-
-export default function Content() {
+export default function Content({filePath}) {
   return (
     <div>
-      <embed src={textFilePath} height="300" width="300" />
+      <embed src={filePath} height="300" width="300" />
     </div>
   )
 }
-

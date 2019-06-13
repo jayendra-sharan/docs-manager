@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import FileList from './file-list.jsx';
+import SidebarHeader from './sidebar-header';
 
 export default function Sidebar() {
 
@@ -11,6 +12,8 @@ export default function Sidebar() {
   return (
     <React.Fragment>
       <div className={sidebarClass}>
+        <SidebarHeader />
+        <div className="sidebar-top-border"></div>
         <FileList /> 
       </div>
       <div

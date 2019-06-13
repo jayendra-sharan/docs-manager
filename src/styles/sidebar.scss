@@ -24,4 +24,60 @@
       }
     }
   }
+  .sidebar-header {
+    display: flex;
+    .sidebar-header-text {
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-family: $sidebar-header-font;
+      line-height: 15px;
+      height: 15px;
+      text-transform: uppercase;
+      margin: 18px 15px;
+      margin-right: 120px;
+      color: #394166;
+    }
+    .upload-button {
+      position: absolute;
+      left: 177px;
+      top: 7px;
+      width: 67px;
+      height: 36px;
+      cursor: pointer;
+
+      .upload-btn-text {
+        height: 13px;
+        width: 44px;
+        font-size: 13px;
+        font-family: $sidebar-header-font;
+        line-height: 13px;
+        color: #9CA0B2;
+        position: absolute;
+        left: 0px;
+        right: 23px;
+        top: 11px;
+      }
+      .upload-icon {
+        position: absolute;
+        height: 14px;
+        width: 12px;
+        right: 1px;
+        top: 13px;
+        svg {
+          position: absolute;
+          height: 14px;
+          width: 12px;
+          color: #9CA0B2;
+          top: 1px;
+        }
+      }
+    }
+  }
+  .sidebar-top-border {
+    position: absolute;
+    width: $sidebar-width;
+    height: 1px;
+    top: 49px;
+    background: #D7D9E0;
+  }
 }
