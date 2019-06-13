@@ -1,0 +1,53 @@
+.sidebar-wrapper {
+  .file-list-wrapper {
+    padding-left: 5px;
+
+    .side-tab-wrapper {
+      position: relative;
+      width: 245px;
+      height: 76px;
+      
+      .file-title {
+        position: absolute;
+        font-family: inherit;
+        height: 18px;
+        left: 15px;
+        right: 68px;
+        top: 15px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #394166;
+        z-index: 1;
+      }
+      .file-persons {
+        position: absolute;
+        left: 16px;
+        right: 66px;
+        top: 47px;
+        font-size: 12px;
+        line-height: 14px;
+        z-index: 1;
+      }
+    }
+    .active-border {
+      position: absolute;
+      width: 5px;
+      left: 0px;
+      top: 0px;
+      bottom: 0px;
+      background: #4077E4;
+      border-radius: 2px 0px 0px 2px;
+    }
+    .active-base {
+      border: 1px solid #E8EAEF;
+      border-radius: 2px;
+      background: #ffffff;
+      box-shadow: 0px 3px 6px rgba(57, 65, 102, 0.05);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
