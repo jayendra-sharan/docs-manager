@@ -10,6 +10,7 @@
     left: 0;
     top: 0;
     bottom: 0;
+    z-index: 1;
 
     @media screen and (max-width: $break-small) {
       left: -$sidebar-width;
@@ -21,10 +22,19 @@
     height: 40px;
     width: 40px;
     background: $sidebar-bgcolor;
+    top: 52px;
+    z-index: 12;
 
     @media screen and (max-width: $break-small) {
       display: block;
     }
+  }
+  
+  .position-all-0 {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 

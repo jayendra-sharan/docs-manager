@@ -1,20 +1,26 @@
 import React from 'react';
-import docs_data from '../../mock/data';
+
+import AppState from './../../app-state';
 import SideTab from './side-tab';
+import { Subscribe } from 'unstated';
 
 export default function FileList() {
   return (
-    <div className='file-list-wrapper'>
+    <Subscribe to={[AppState]}>
       {
-        docs_data.map((item, index) => (
-          <SideTab
-            isActive={index === 0}
-            fileName={item.fileName}
-            author={item.author}
-            sharedWith={item.sharedWith}
-            key={item.fileName} />
-        ))
+        (appState) => (
+          <div className='file-list-wrapper'>
+          {
+            appState.state.docList.map((item, index) => (
+              <SideTab
+                isActive={item.id === appState.state.selectedDoc.id}
+                file={item}
+                key={item.fileName} />
+            ))
+          }
+        </div>
+        )
       }
-    </div>
+    </Subscribe>
   )
 }

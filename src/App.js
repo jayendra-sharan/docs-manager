@@ -8,7 +8,11 @@ function App() {
   return (
     <div className="app-wrapper">
       <Sidebar />
-      <Content />
+      <Content
+        selectedFile={{
+          fileName: "Document #1"
+        }}
+        />
     </div>
   );
 }

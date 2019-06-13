@@ -1,0 +1,42 @@
+.app-wrapper {
+  .main-content-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #E8EAEF;
+    position: absolute;
+    left: $sidebar-width;
+    
+    .main-header {
+      position: absolute;
+
+      background: #4077E4;
+      height: 50px;
+
+      .main-header-title {
+        font-size: 18px;
+        line-height: 26px;
+        height: 26px;
+        color: #FFFFFF;
+        margin: 14px 0 10px 20px;
+      }
+    }
+    @media screen and (max-width: $break-small) {
+      left: 0;
+    }
+  }
+  .document-wrapper {
+    position: absolute;
+    left: 11px;
+    right: 9px;
+    top: 60px;
+    bottom: 154px;
+
+    .document-preview {
+      width: 547px;
+      left: 28px;
+      top: 15px;
+      bottom: 0;
+      padding-bottom: 59px;
+      position: absolute;
+    }
+  }
+}
