@@ -37,7 +37,7 @@ export default class AppState extends Container {
         filePath: doc.filePath,
         fileType: doc.fileType.replace("application/", ""),
         author: "me",
-        sharedWith: "Dusting",
+        sharedWith: "Dustin",
       }]
     })
   }
