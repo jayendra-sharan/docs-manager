@@ -5,6 +5,7 @@ const getRandomDocId = () => parseInt((Math.random() + 10) * 100);
 
 const extractFileInfo = (eventObj) => {
   const file = eventObj.target.files[0];
+  if (!file) return;
   const path = URL.createObjectURL(file);;
   const { name, type } = file;
   return {
